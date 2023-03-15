@@ -22,7 +22,7 @@ def MatrixMultiplication(A,B):
 
     n = len(A) # == len(B) , 행 또는 열의 갯수.
     
-    C = [[0]*n for _ in range(n)]
+    C = [[0] * n for _ in range(n)]
     
     # i 열 k 행
     for i in range(0, n):
@@ -38,3 +38,15 @@ def MatrixMultiplication(A,B):
 
     
 print(MatrixMultiplication(c,d))
+
+# Nomal Matrix
+# A : AxB , B : BxD -> C : A*D
+
+"""
+def nomalMatrix(A, B):
+    C = [[0] * len(A)] * 
+    for i in range(0, len(A)):
+        for j in range(0, len(B)):
+            for k in range(0, len(B)):
+                C[i][j] += A[i][k] * B[k][j]
+"""
