@@ -2,6 +2,9 @@
 
 과제 정리 폴더
 
+1. **HW-1**
+   > Bubble Sort & Quick Sort
+
 ### <strong>Practice</strong>
 
 실습 정리 폴더
