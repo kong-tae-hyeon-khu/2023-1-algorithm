@@ -35,7 +35,7 @@ def quick_sort(datas, start, end):
     quick_sort(datas, start, right - 1)
     quick_sort(datas, right + 1, end)
             
-
+# ---------------------------------------------------------------------------------------------------
 
 # (2) 테이블 작성용
 import random
@@ -58,6 +58,8 @@ for random_value in range(0, 5000):
      test_data1.append(value)
      test_data2.append(value)
 
+print("n = 5000 ------------------")
+
 # (bubble sort)
 start = time.time()
 bubble_sort(test_data1)
@@ -71,6 +73,7 @@ quick_sort(test_data2, 0, len(test_data2) - 1)
 end = time.time()
 print(end-start)
 
+# ---------------------------------------------------------------------------------------------------
 
 # Case 2 : N = 10,000
 
@@ -84,6 +87,8 @@ for random_value in range(0, 10000):
      test_data1.append(value)
      test_data2.append(value)
 
+print("n = 10000 ------------------")
+
 # (bubble sort)
 start = time.time()
 bubble_sort(test_data1)
@@ -98,3 +103,133 @@ end = time.time()
 print(end-start)
 
 
+# ---------------------------------------------------------------------------------------------------
+
+# Case 3 : N = 15,000
+test_data1 = []
+test_data2 = []
+
+for random_value in range(0, 15000):
+     
+     # 각각의 동일한 테스트 데이터 생성
+     value = random.randint(1, 1000)
+     test_data1.append(value)
+     test_data2.append(value)
+
+print("n = 15000 ------------------")
+
+# (bubble sort)
+start = time.time()
+bubble_sort(test_data1)
+end = time.time()
+print(end - start)
+
+
+# (quick_sort)
+start = time.time()
+quick_sort(test_data2, 0, len(test_data2) - 1)
+end = time.time()
+print(end-start)
+
+
+# ---------------------------------------------------------------------------------------------------
+
+# Case 4 : N = 20,000
+test_data1 = []
+test_data2 = []
+
+for random_value in range(0, 20000):
+     
+     # 각각의 동일한 테스트 데이터 생성
+     value = random.randint(1, 1000)
+     test_data1.append(value)
+     test_data2.append(value)
+
+print("n = 20000 ------------------")
+
+# (bubble sort)
+start = time.time()
+bubble_sort(test_data1)
+end = time.time()
+print(end - start)
+
+
+# (quick_sort)
+start = time.time()
+quick_sort(test_data2, 0, len(test_data2) - 1)
+end = time.time()
+print(end-start)
+
+
+# ---------------------------------------------------------------------------------------------------
+
+# Case 5 : N = 30,000
+test_data1 = []
+test_data2 = []
+
+for random_value in range(0, 30000):
+     
+     # 각각의 동일한 테스트 데이터 생성
+     value = random.randint(1, 1000)
+     test_data1.append(value)
+     test_data2.append(value)
+
+print("n = 30000 ------------------")
+
+# (bubble sort)
+start = time.time()
+bubble_sort(test_data1)
+end = time.time()
+print(end - start)
+
+
+# (quick_sort)
+start = time.time()
+quick_sort(test_data2, 0, len(test_data2) - 1)
+end = time.time()
+print(end-start)
+
+
+# ---------------------------------------------------------------------------------------------------
+
+# Case 6 : N = 40,000
+
+test_data1 = []
+test_data2 = []
+
+for random_value in range(0, 40000):
+     
+     # 각각의 동일한 테스트 데이터 생성
+     value = random.randint(1, 1000)
+     test_data1.append(value)
+     test_data2.append(value)
+
+print("n = 40000 ------------------")
+
+# (bubble sort)
+start = time.time()
+bubble_sort(test_data1)
+end = time.time()
+print(end - start)
+
+
+# (quick_sort)
+start = time.time()
+quick_sort(test_data2, 0, len(test_data2) - 1)
+end = time.time()
+print(end-start)
+
+# ---------------------------------------------------------------------------------------------------
+
+# Case 7 : N = 80,000 
+test_data = []
+for random_value in range(0, 80000):
+     test_data.append(random.randint(1,1000))
+
+print("n = 80000 quick_sort ------------------")
+
+# (quick_sort)
+start = time.time()
+quick_sort(test_data, 0, len(test_data) - 1)
+end = time.time()
+print(end-start)
