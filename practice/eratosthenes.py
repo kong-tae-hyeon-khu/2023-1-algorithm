@@ -34,3 +34,11 @@ def sieve_of_eratosthenes(n):
 
 
 print(sieve_of_eratosthenes(30))
+
+
+arr = [True] * 26 # 1 ~ 25 까지의 인덱스를 위해서.
+for i in range(2, math.floor(math.sqrt(25)) + 1):
+   for j in range(i, math.floor(math.sqrt(25)) + 1):
+      if (arr[j*i] == True):
+         arr[j*i] = False # 소수가 아니다.
+print(arr)
