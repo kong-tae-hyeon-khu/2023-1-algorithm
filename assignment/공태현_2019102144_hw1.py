@@ -102,7 +102,7 @@ quick_sort(test_data2, 0, len(test_data2) - 1)
 end = time.time()
 print(end-start)
 
-
+""" 15,000 ~ 80,000 까지의 경우. (주석처리)
 # ---------------------------------------------------------------------------------------------------
 
 # Case 3 : N = 15,000
@@ -233,3 +233,5 @@ start = time.time()
 quick_sort(test_data, 0, len(test_data) - 1)
 end = time.time()
 print(end-start)
+
+"""
