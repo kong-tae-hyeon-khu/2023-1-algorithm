@@ -120,4 +120,5 @@ print("적용 후")
 printMatrix(m)
 
 print()
+print("순서 : ", end= "")
 order(p,1,6)
